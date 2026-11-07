@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"simple-api/calculator"
+	"github.com/TaCkeR00/gradecalc/calculator"
 )
 
 func TestInternalLogic(t *testing.T) {

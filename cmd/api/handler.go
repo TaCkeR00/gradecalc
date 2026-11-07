@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"simple-api/calculator"
+	"github.com/TaCkeR00/gradecalc/calculator"
 )
 
 func calculateGradeHandler(w http.ResponseWriter, r *http.Request) {

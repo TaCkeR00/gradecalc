@@ -1,4 +1,4 @@
-# Simple API & Grade Calculator
+# gradecalc
 
 A lightweight, zero-dependency Go application and REST API for calculating university semester averages (GPA) and accumulated academic credits.
 
@@ -28,7 +28,7 @@ Designed with clean architecture and domain-driven separation: the core calculat
 ├── calculator/           # Pure domain package (business logic & types)
 │   ├── types.go          # Data models (Modules, Module, Grade)
 │   ├── helpers.go        # Computation math & stream decoding (FromJSON)
-│   └── helpers_test.go   # Integration and unit tests
+│   └── calculator_test.go# Integration and unit tests
 ├── cmd/
 │   ├── cli/              # Command-line interface application
 │   │   ├── main.go       # Flag parsing and CLI flow

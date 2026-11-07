@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"simple-api/calculator"
+	"github.com/TaCkeR00/gradecalc/calculator"
 )
 
 func ReadGradesFromUser(m *calculator.Modules) error {
