@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/TaCkeR00/gradecalc/calculator"
+	"github.com/TaCkeR00/gradecalc/internal/calculator"
 )
 
 func main() {

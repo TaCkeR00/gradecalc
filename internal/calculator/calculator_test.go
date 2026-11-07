@@ -1,10 +1,9 @@
 package calculator_test
 
 import (
+	"github.com/TaCkeR00/gradecalc/internal/calculator"
 	"strings"
 	"testing"
-
-	"github.com/TaCkeR00/gradecalc/calculator"
 )
 
 func TestInternalLogic(t *testing.T) {

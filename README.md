@@ -25,10 +25,11 @@ Designed with clean architecture and domain-driven separation: the core calculat
 
 ```text
 .
-├── calculator/           # Pure domain package (business logic & types)
-│   ├── types.go          # Data models (Modules, Module, Grade)
-│   ├── helpers.go        # Computation math & stream decoding (FromJSON)
-│   └── calculator_test.go# Integration and unit tests
+├── internal/
+│   └── calculator/       # Pure domain package (business logic & types)
+│       ├── types.go      # Data models (Modules, Module, Grade)
+│       ├── helpers.go    # Computation math & stream decoding (FromJSON)
+│       └── calculator_test.go # Integration and unit tests
 ├── cmd/
 │   ├── cli/              # Command-line interface application
 │   │   ├── main.go       # Flag parsing and CLI flow
