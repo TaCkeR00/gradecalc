@@ -1,0 +1,39 @@
+version: '3'
+
+vars:
+  CLI_APP_DIR: ./cmd/cli
+  CLI_BIN_PATH: ./bin/cli
+  API_APP_DIR: ./cmd/api
+  API_BIN_PATH: ./bin/api
+
+tasks:
+  run-cli:
+    desc: Run the CLI
+    cmds:
+      - go run {{.CLI_APP_DIR}} -file test.json {{.CLI_ARGS}}
+
+  build-cli:
+    desc: Build the CLI
+    cmds:
+      - go build -o {{.CLI_BIN_PATH}} {{.CLI_APP_DIR}}
+
+  run-api:
+    desc: Run the API
+    cmds:
+      - go run {{.API_APP_DIR}}
+
+  build-api:
+    desc: Build the API
+    cmds:
+      - go build -o {{.API_BIN_PATH}} {{.API_APP_DIR}}
+
+  build:
+    desc: Build all binaries
+    deps: [build-cli, build-api]
+
+  test:
+    desc: Run test suite
+    cmds:
+      - go test -v ./...
+
+

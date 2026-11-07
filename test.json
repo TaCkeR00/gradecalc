@@ -1,0 +1,46 @@
+{
+  "split": 0.6,
+  "modules": [
+    {
+      "name": "analysis",
+      "coff": 4,
+      "credit": 6,
+      "type": 2,
+      "grades": {
+        "exam": 4.0,
+        "td": 10.0
+      }
+    },
+    {
+      "name": "algorithm",
+      "coff": 4,
+      "credit": 6,
+      "type": 3,
+      "grades": {
+        "exam": 14.75,
+        "td": 16.75,
+        "tp": 16.5
+      }
+    },
+    {
+      "name": "stm",
+      "coff": 3,
+      "credit": 5,
+      "type": 2,
+      "grades": {
+        "exam": 10.0,
+        "td": 10.0
+      }
+    },
+    {
+      "name": "algebra",
+      "coff": 4,
+      "credit": 5,
+      "type": 2,
+      "grades": {
+        "exam": 9.5,
+        "td": 14
+      }
+    }
+  ]
+}
